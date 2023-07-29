@@ -1,8 +1,12 @@
 function displayTemperature(response) {
-  console.log(response.data.temperature);
+  console.log(response.data);
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city");
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  cityElement.innerHTML = response.data.city;
 }
 
-let query = "tokyo";
+let query = "Lisbon";
 
 let apiKey = `17t909018ba21db35adf4700b4co23a4`;
 
