@@ -42,10 +42,10 @@ function displayTemperature(response) {
   );
 }
 
-let query = "Fairbanks";
+let query = "Roseburg";
 
 let apiKey = `17t909018ba21db35adf4700b4co23a4`;
 
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}&units=imperial`;
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
