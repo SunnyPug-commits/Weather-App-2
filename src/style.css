@@ -61,6 +61,7 @@ a:hover {
   background: #514f5e;
   border: 1px solid #514f5e;
   transition: ease-in-out 0.2s;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn:hover {
@@ -89,4 +90,14 @@ a:hover {
   font-size: 16px;
   top: -34px;
   color: #8f8ca7;
+}
+
+.form-control {
+  color: #8f8ca7;
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-control:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
