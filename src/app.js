@@ -42,10 +42,19 @@ function displayTemperature(response) {
   );
 }
 
-let query = "Roseburg";
+function search(city) {
+  let apiKey = `17t909018ba21db35adf4700b4co23a4`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-let apiKey = `17t909018ba21db35adf4700b4co23a4`;
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
 
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}&units=metric`;
+search("New York");
 
-axios.get(apiUrl).then(displayTemperature);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

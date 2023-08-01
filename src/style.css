@@ -57,6 +57,16 @@ a:hover {
   transition: ease-in-out 0.3s;
 }
 
+.btn {
+  background: #514f5e;
+  border: 1px solid #514f5e;
+  transition: ease-in-out 0.2s;
+}
+
+.btn:hover {
+  background: #8f8ca7;
+  border: 1px solid #8f8ca7;
+}
 .overview {
   margin-bottom: 20px;
 }
@@ -68,7 +78,7 @@ a:hover {
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: #514f5e;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -78,4 +88,5 @@ a:hover {
   position: relative;
   font-size: 16px;
   top: -34px;
+  color: #514f5e;
 }
